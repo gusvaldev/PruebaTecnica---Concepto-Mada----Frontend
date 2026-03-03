@@ -3,18 +3,16 @@ import "./ProductCard.css";
 
 interface Props {
   product: Products;
+  onEdit: (product: Products) => void;
+  onDelete: (id: Products["id"]) => void;
 }
 
-const ProductCard = ({ product }: Props) => {
+const ProductCard = ({ product, onEdit, onDelete }: Props) => {
   return (
     <div className="product-card">
       <div className="product-card__header">
-        <span className={`product-card__badge product-card__badge_tipo`}>
-          {product.tipo}
-        </span>
-        <span className="product-card__price">
-          ${product.precio.toLocaleString("es-MX")}
-        </span>
+        <span className="product-card__badge">{product.tipo}</span>
+        <span className="product-card__price">${Number(product.precio)}</span>
       </div>
 
       <h3 className="product-card__name">{product.nombre}</h3>
@@ -28,6 +26,21 @@ const ProductCard = ({ product }: Props) => {
           <span className="product-card__label">Talla</span>
           <span className="product-card__value">{product.talla}</span>
         </div>
+      </div>
+
+      <div className="product-card__actions">
+        <button
+          className="product-card__btn product-card__btn--edit"
+          onClick={() => onEdit(product)}
+        >
+          Editar
+        </button>
+        <button
+          className="product-card__btn product-card__btn--delete"
+          onClick={() => onDelete(product.id)}
+        >
+          Eliminar
+        </button>
       </div>
     </div>
   );

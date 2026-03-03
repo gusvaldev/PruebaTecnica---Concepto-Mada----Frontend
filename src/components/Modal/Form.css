@@ -1,0 +1,123 @@
+.Form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.Form {
+  background: #1e1e2e;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.Form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.Form__header h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.Form__close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.Form__close:hover {
+  color: #fff;
+}
+
+.Form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.Form__field label {
+  color: #aaa;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.Form__field input,
+.Form__field select {
+  background: #2a2a3e;
+  border: 1px solid #3a3a4e;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.Form__field input:focus,
+.Form__field select:focus {
+  outline: none;
+  border-color: #7c5cbf;
+}
+
+.Form__field select option {
+  background: #2a2a3e;
+}
+
+.Form__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.Form__btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.Form__btn--cancel {
+  background: #2a2a3e;
+  color: #aaa;
+  border: 1px solid #3a3a4e;
+}
+
+.Form__btn--cancel:hover {
+  background: #3a3a4e;
+  color: #fff;
+}
+
+.Form__btn--submit {
+  background: #7c5cbf;
+  color: #fff;
+}
+
+.Form__btn--submit:hover {
+  background: #6a4da8;
+}

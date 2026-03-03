@@ -4,10 +4,10 @@
 }
 
 .filter-bar__btn {
-  background-color: #1e1e2e;
-  border: 1px solid #2e2e4a;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  color: #aaa;
+  color: #888;
   cursor: pointer;
   font-family: inherit;
   font-size: 0.9rem;
@@ -18,7 +18,7 @@
 
 .filter-bar__btn:hover {
   border-color: #7c5cbf;
-  color: #f0f0f0;
+  color: #7c5cbf;
 }
 
 .filter-bar__btn--active {

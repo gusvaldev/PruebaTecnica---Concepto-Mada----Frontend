@@ -15,11 +15,6 @@ const SearchBar = ({ value, onChange }: Props) => {
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />
-      {value && (
-        <button className="search-bar__clear" onClick={() => onChange("")}>
-          ✕
-        </button>
-      )}
     </div>
   );
 };

@@ -7,6 +7,10 @@ Tecnologias utilizadas en el frontend:
 - React (Typescript)
 - Fetch API (No axios)
 
+Requisitos:
+
+- Tener instalado node.js (LTS de preferencia)
+
 PASOS PARA EJECTUTAR EL PROYECTO LOCALMENTE
 
 1. Clonar el repositorio

@@ -12,7 +12,7 @@ PASOS PARA EJECTUTAR EL PROYECTO LOCALMENTE
 1. Clonar el repositorio
 
 - git clone https://github.com/gusvaldev/PruebaTecnica---Concepto-Mada----Frontend.git
-- cd CONCEPTO_MADA_REACT
+- cd PruebaTecnica---Concepto-Mada----Frontend
 
 2. Instalar las dependencias del proyecto
 
